@@ -50,6 +50,14 @@ h1{
 
 header{
     font-size: 14px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+main{
+    z-index: 1;
 }
 
 .header__bg{
@@ -67,8 +75,22 @@ header{
     padding: 22px 0 22px 72px;
 }
 
+.link{
+    padding: 10px 10px 10px 10px;
+    color:black;
+}
+
+.link:hover{
+    color:#756357;
+}
+
+.link_phone{
+    color: black;
+}
+
 .header__nav_center{
     padding: 22px 0 22px 0;
+
 }
 
 .header__nav_right{
@@ -267,6 +289,7 @@ header{
     margin: 0px 0 0 316px;
     position: relative;
     top: -86px;
+    box-shadow: 0px 5px 15px 7px rgba(0, 0, 0, 0.1);
 }
 
 .form__top-bg{
@@ -365,6 +388,10 @@ header{
     background-color: white;
 }
 
+.form__button:hover{
+    background-color:#94c1dd;
+}
+
 .form__button{
     height: 58px;
     width: 458px;
@@ -373,6 +400,7 @@ header{
     text-align: center;
     line-height: 58px;
     font-size: 21px;
+    font-weight: 700;
 }
 
 .footer_bg{
@@ -411,6 +439,19 @@ header{
     background-color: #81B4D3;
     margin: 36px 6px 0 0;
     padding: 17px 14px 16px 15px;
+}
+
+
+.footer__icons_left:hover{
+    background-color:#94c1dd;
+}
+
+.footer__icons_center:hover{
+    background-color:#94c1dd;
+}
+
+.footer__icons_right:hover{
+    background-color:#94c1dd;
 }
 
 .footer__icons_center{

@@ -15,13 +15,15 @@
 
 <body>
     <header>
-        <ul class="header__bg">
-            <li class="header__nav_left">ИНФОРМАЦИЯ</li>
-            <li class="header__nav_center">ФОТО И ВИДЕО</li>
-            <li class="header__logo"><img src="img/logo.svg" alt=""></li>
-            <li class="header__nav_center">КАРТА ШТАТА</li>
-            <li class="header__nav_right">ГОСТИНИЦЫ</li>
-        </ul>
+        <nav>
+            <ul class="header__bg">
+                <li class="header__nav_left" ><a href="https://github.com" target="blank" class="link">ИНФОРМАЦИЯ</a></li>
+                <li class="header__nav_center"><a href="https://github.com" target="blank" class="link" >ФОТО И ВИДЕО</a></li>
+                <li class="header__logo"><img src="img/logo.svg" alt=""></li>
+                <li class="header__nav_center"><a href="https://github.com" target="blank" class="link">КАРТА ШТАТА</a></li>
+                <li class="header__nav_right"><a href="https://github.com" target="blank" class="link">ГОСТИНИЦЫ</a></li>
+            </ul>
+    </nav>
     </header>
     
 
@@ -139,7 +141,7 @@
                     </div>
                 </div>
                 <div class="form__button-bg">
-                    <h2 class="form__button">НАЙТИ</h2>
+                    <button class="form__button" type="submit">НАЙТИ</button>
                 </div>
             </div>
         </section>
@@ -148,15 +150,21 @@
     
     <footer class="footer_bg">
         <section class="footer">
-            <h2 class="footer__data">#VISITSEDONA<br>ТЕЛ: +7(495) 666-02-66</h2>
+            <h2 class="footer__data">#VISITSEDONA<br>
+                <a href="tel:+7(495) 666-02-66" class="link_phone">ТЕЛ: +7(495) 666-02-66</a>
+            </h2>
             <ul class="footer__icons">
-                <li class="footer__icons_left"><img src="img/icons-1.png" alt=""></li>
-                <li class="footer__icons_center"><img src="img/icons-2.png" alt=""></li>
-                <li class="footer__icons_right"><img src="img/icons-3.png" alt=""></li>
+                <a href="https://twitter.com/?lang=ru" target="blank">
+                    <li class="footer__icons_left"><img src="img/icons-1.png" alt=""></li></a>
+                <a href="https://ru-ru.facebook.com" target="blank">
+                    <li class="footer__icons_center"><img src="img/icons-2.png" alt=""></li></a>
+                <a href="https://www.youtube.com" target="blank">
+                    <li class="footer__icons_right"><img src="img/icons-3.png" alt=""></li></a>
             </ul>
             <div class="footer__html-academy">
                 <p class="footer__text">WEBSITE BY</p>
-                <div class="footer__logo"><img src="img/footer__logo.png" alt=""></div>
+                <a class="footer__logo" href="https://htmlacademy.ru" target="blank">
+                    <img src="img/footer__logo.png" alt=""></a>
             </div>
         </section>
     </footer>
