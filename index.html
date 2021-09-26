@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +16,30 @@
 <body>
     <header>
         <nav>
-            <ul class="header__bg">
-                <li class="header__nav_left" ><a href="https://github.com" target="blank" class="link">ИНФОРМАЦИЯ</a></li>
-                <li class="header__nav_center"><a href="https://github.com" target="blank" class="link" >ФОТО И ВИДЕО</a></li>
-                <li class="header__logo"><img src="img/logo.svg" alt=""></li>
-                <li class="header__nav_center"><a href="https://github.com" target="blank" class="link">КАРТА ШТАТА</a></li>
-                <li class="header__nav_right"><a href="https://github.com" target="blank" class="link">ГОСТИНИЦЫ</a></li>
+            <ul class="header-nav">
+                <li class="header-nav__item header-nav__item_left">
+                    <a href="https://github.com" target="blank" class="link">ИНФОРМАЦИЯ</a>
+                </li>
+
+                <li class="header-nav__item header-nav__item_center">
+                    <a href="https://github.com" target="blank" class="link">ФОТО И ВИДЕО</a>
+                </li>
+
+                <li class="header-nav__item header-nav__item_logo">
+                    <a href="https://github.com" target="blank">
+                        <img src="img/logo.svg" alt=""></img></a>
+                </li>
+                <li class="header-nav__item header-nav__item_center">
+                    <a href="https://github.com" target="blank" class="link">КАРТА ШТАТА</a>
+                </li>
+
+                <li class="header-nav__item header-nav__item_right">
+                    <a href="https://github.com" target="blank" class="link">ГОСТИНИЦЫ</a>
+                </li>
             </ul>
-    </nav>
+        </nav>
     </header>
-    
+
 
     <main>
         <h1>скрытый текст</h1>
@@ -37,9 +51,9 @@
                 <p class="home-page__subtitle">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
             </div>
         </section>
-        
+
         <section class="photo">
-            <div class="photo_right__blue">
+            <div class="photo__right photo__right_blue">
                 <h2 class="photo__title">НАСТОЯЩИЙ<br>ГОРОДОК</h2>
                 <p class="photo__subtitle">— №1 —</p>
                 <p class="photo__text">СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br>ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
@@ -47,126 +61,141 @@
             <div class="photo__bg"><img src="img/photo__bg.png" alt=""></div>
         </section>
 
-        <ul class="advantage">
-            <li class="advantage__block">
-                <div class="advantage__icon"><img src="img/advantage__icon-1.png" alt=""></div>
-                <h2 class="advantage__title">ЖИЛЬЁ</h2>
-                <p class="advantage__subtitle">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
-            </li>
-            <li class="advantage__block">
-                <div class="advantage__icon"><img src="img/advantage__icon-2.png" alt=""></div>
-                <h2 class="advantage__title">ЕДА</h2>
-                <p class="advantage__subtitle">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
-            </li>
-            <li class="advantage__block">
-                <div class="advantage__icon"><img src="img/advantage__icon-3.png" alt=""></div>
-                <h2 class="advantage__title">СУВЕНИРЫ</h2>
-                <p class="advantage__subtitle">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br>ПРОИЗВОДСТВА!</p>
-            </li>
-        </ul>
-        
+        <section class="advantage">
+            <ul class="advantage__base">
+                <li class="advantage__block">
+                    <div class="advantage__icon"><img src="img/advantage__icon-1.png" alt=""></div>
+                    <h2 class="advantage__title">ЖИЛЬЁ</h2>
+                    <p class="advantage__subtitle">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
+                </li>
+                <li class="advantage__block">
+                    <div class="advantage__icon"><img src="img/advantage__icon-2.png" alt=""></div>
+                    <h2 class="advantage__title">ЕДА</h2>
+                    <p class="advantage__subtitle">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                </li>
+                <li class="advantage__block">
+                    <div class="advantage__icon"><img src="img/advantage__icon-3.png" alt=""></div>
+                    <h2 class="advantage__title">СУВЕНИРЫ</h2>
+                    <p class="advantage__subtitle">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br>ПРОИЗВОДСТВА!</p>
+                </li>
+            </ul>
+        </section>
+
         <section class="photo">
             <div class="photo__bg"><img src="img/photo__bg-2.png" alt=""></div>
-            <div class="photo_left__blue">
+            <div class="photo__left photo__left_blue">
                 <h2 class="photo__title">ТАМ ЕСТЬ,<br>МОСТ ДЬЯВОЛА</h2>
                 <p class="photo__subtitle">— №2 —</p>
                 <p class="photo__text">ДА, ПО НЕМУ МОЖНО ПРОЙТИ!ЕСЛИ КОНЕЧНО<br>ВЫ ОСМЕЛИТЕСЬ</p>
             </div>
         </section>
 
-        <ul class="text-block">
-            <li class="text-block__list">
-                <h2 class="text-block__title">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h2>
-                <p class="text-block__subtitle">— №3 —</p>
-                <p class="text-block__text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br>НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
-            </li>
-            <li class="text-block__list">
-                <h2 class="text-block__title">КРАСИВАЯ<br>ДОРОГА</h2>
-                <p class="text-block__subtitle">— №4 —</p>
-                <p class="text-block__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>НЕ СКУЧНО!</p>
-            </li>
-            <li class="text-block__list">
-                <h2 class="text-block__title">МАЛО<br>ТУРИСТОВ</h2>
-                <p class="text-block__subtitle">— №5 —</p>
-                <p class="text-block__text">БОЛЬШИНСТВА ЕДЕТ В ГРАНД КАНЬОН<br>И ТОЛПИТСЯ ТАМ</p>
-            </li>
-        </ul>
-
-        <section class="question">
-            <h2 class="question__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-            <p class="question__subtitle">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        <section class="text-block">
+            <ul class="text-block__base">
+                <li class="text-block__list">
+                    <h2 class="text-block__title">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h2>
+                    <p class="text-block__subtitle">— №3 —</p>
+                    <p class="text-block__text">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br>НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+                </li>
+                <li class="text-block__list">
+                    <h2 class="text-block__title">КРАСИВАЯ<br>ДОРОГА</h2>
+                    <p class="text-block__subtitle">— №4 —</p>
+                    <p class="text-block__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>НЕ СКУЧНО!</p>
+                </li>
+                <li class="text-block__list">
+                    <h2 class="text-block__title">МАЛО<br>ТУРИСТОВ</h2>
+                    <p class="text-block__subtitle">— №5 —</p>
+                    <p class="text-block__text">БОЛЬШИНСТВА ЕДЕТ В ГРАНД КАНЬОН<br>И ТОЛПИТСЯ ТАМ</p>
+                </li>
+            </ul>
         </section>
 
-        <section class="form_map">
-            <div class="form">
-                <h2 class="form__top-bg">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-                <div class="form__white-bg">
-                    <div class="form__punkt">
+        <section class="input">
+            <section class="question">
+                <h2 class="question__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+                <p class="question__subtitle">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ
+                    ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+                </p>
+            </section>
 
-                        <div class="form__text">
-                            <p class="form__title">ДАТА ЗАЕЗДА:</p>
-                            <div class="form__title_input">24 АПРЕЛЯ 2017
-                                <div class="form__calendar"><img src="img/calendar.png" alt=""></div>
-                            </div>
-                        </div>
+            <section class="form">
+                <form class="form__base">
+                    <h2 class="form__top-bg">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+                    <div class="form__white-bg">
+                        <div class="form__punkt">
 
-                        <div class="form__text">
-                            <p class="form__title">ДАТА ВЫЕЗДА:</p>
-                            <div class="form__title_input">4 ИЮЛЯ 2017
-                                <div class="form__calendar"><img src="img/calendar.png" alt=""></div>
-                            </div>
-                        </div>
-
-                        <div class="form__two-title">
-
-                            <div class="form__text_down">
-                                <p class="form__two-title_left">ВЗРОСЛЫЕ:</p>
-                                <div class="form__change">
-                                    <div class="form__minus"><img src="img/minus.png" alt=""></div>
-                                    <p class="form__title_change">2</p>
-                                    <div class="form__plus"><img src="img/plus.png" alt=""></div>
-                                </div>
-                            </div>
-                            
-                            <div class="form__text_down">
-                                <p class="form__two-title_right">ДЕТИ:</p>
-                                <div class="form__change">
-                                    <div class="form__minus"><img src="img/minus.png" alt=""></div>
-                                    <p class="form__title_change">0</p>
-                                    <div class="form__plus"><img src="img/plus.png" alt=""></div>
+                            <div class="form__text">
+                                <p class="form__title">ДАТА ЗАЕЗДА:</p>
+                                <div class="form__text-line">
+                                    <input class="form__input" type="text">
+                                    <div class="form__calendar"><img src="img/calendar.png" alt=""></div>
                                 </div>
                             </div>
 
+                            <div class="form__text">
+                                <p class="form__title">ДАТА ВЫЕЗДА:</p>
+                                <div class="form__text-line">
+                                    <input class="form__input" type="text">
+                                    <div class="form__calendar"><img src="img/calendar.png" alt=""></div>
+                                </div>
+                            </div>
+
+                            <div class="form__two-title">
+
+                                <div class="form__text form__text_down">
+                                    <p class="form__two-title form__two-title_left">ВЗРОСЛЫЕ:</p>
+                                    <div class="form__change">
+                                        <button class="form__minus" type="button">
+                                            <img src="img/minus.png" alt=""></button>
+                                        <p class="form__title form__title_change">2</p>
+                                        <button class="form__plus" type="button">
+                                            <img src="img/plus.png" alt=""></button>
+                                    </div>
+                                </div>
+
+                                <div class="form__text form__text_down">
+                                    <p class="form__two-title form__two-title_right">ДЕТИ:</p>
+                                    <div class="form__change">
+                                        <button class="form__minus" type="button">
+                                            <img src="img/minus.png" alt=""></button>
+                                        <p class="form__title form__title_change">0</p>
+                                        <button class="form__plus" type="button">
+                                            <img src="img/plus.png" alt=""></button>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form__button-bg">
-                    <button class="form__button" type="submit">НАЙТИ</button>
-                </div>
-            </div>
+                    <div class="form__button-bg">
+                        <button class="form__button" type="submit">НАЙТИ</button>
+                    </div>
+                </form>
+            </section>
         </section>
     </main>
 
-    
-    <footer class="footer_bg">
-        <section class="footer">
-            <h2 class="footer__data">#VISITSEDONA<br>
-                <a href="tel:+7(495) 666-02-66" class="link_phone">ТЕЛ: +7(495) 666-02-66</a>
-            </h2>
-            <ul class="footer__icons">
-                <a href="https://twitter.com/?lang=ru" target="blank">
-                    <li class="footer__icons_left"><img src="img/icons-1.png" alt=""></li></a>
-                <a href="https://ru-ru.facebook.com" target="blank">
-                    <li class="footer__icons_center"><img src="img/icons-2.png" alt=""></li></a>
-                <a href="https://www.youtube.com" target="blank">
-                    <li class="footer__icons_right"><img src="img/icons-3.png" alt=""></li></a>
-            </ul>
-            <div class="footer__html-academy">
-                <p class="footer__text">WEBSITE BY</p>
-                <a class="footer__logo" href="https://htmlacademy.ru" target="blank">
-                    <img src="img/footer__logo.png" alt=""></a>
-            </div>
-        </section>
+
+    <footer class="footer">
+        <address class="footer__data">#VISITSEDONA<br>
+            <a href="tel:+7(495) 666-02-66" class="link_phone">ТЕЛ: +7(495) 666-02-66</a>
+        </address>
+        <ul class="footer__icons">
+            <li><a class="footer__icons footer__icons_left" href="https://twitter.com/?lang=ru" target="blank">
+                    <img src="img/icons-1.png" alt=""></a>
+            </li>
+            <li><a class="footer__icons footer__icons_center" href="https://ru-ru.facebook.com" target="blank">
+                    <img src="img/icons-2.png" alt=""></a>
+            </li>
+            <li><a class="footer__icons footer__icons_right" href="https://www.youtube.com" target="blank">
+                    <img src="img/icons-3.png" alt=""></a>
+            </li>
+        </ul>
+        <div class="footer__html-academy">
+            <p class="footer__text">WEBSITE BY</p>
+            <a class="footer__logo" href="https://htmlacademy.ru" target="blank">
+                <img src="img/footer__logo.png" alt=""></a>
+        </div>
     </footer>
 
 </body>

@@ -1,2 +1,0 @@
-# sedona
-test html css
