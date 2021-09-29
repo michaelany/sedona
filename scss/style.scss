@@ -1,0 +1,32 @@
+@import "_nullstyle";
+@import "_header";
+@import "_main";
+@import "_footer";
+
+address {
+    font-style: normal
+  }
+  
+.link:hover{
+    color:#756357;
+}
+
+.link_phone{
+    color: black;
+}
+
+.form__button:hover{
+    background-color:#94c1dd;
+}
+
+.footer__icons.footer__icons_left:hover{
+    background-color:#94c1dd;
+}
+
+.footer__icons.footer__icons_center:hover{
+    background-color:#94c1dd;
+}
+
+.footer__icons.footer__icons_right:hover{
+    background-color:#94c1dd;
+}

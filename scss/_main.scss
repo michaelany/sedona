@@ -1,90 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-*,*:before,*:after{
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-
-html,body{
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -webkit-text-size-adjust: 100%;
-}
-input,button,textarea{font-family:inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none}
-img{vertical-align: top;}
-
-h1,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
-h2{font-weight: 700;}
-
-
-body{
-    font-family: "PT Sans";
-    font-weight: 700;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: 0px auto;
-}
-
-h1{
-    display: none;
-}
-
-header{
-    font-size: 14px;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1;
-}
-
-.header-nav{
-    height: 56px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-nav__item.header-nav__item_logo{
-    width: 140px;
-    height: 70px;
-}
-
-.header-nav__item.header-nav__item_left{
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 72px;
-}
-
-.header-nav__item.header-nav__item_center{
-    padding-top: 22px;
-    padding-bottom: 22px;
-}
-
-.header-nav__item.header-nav__item_right{
-    padding-top: 22px;
-    padding-right: 72px;
-    padding-bottom: 22px;
-}
-
-.link{
-    padding: 10px;
-    color:black;
-}
-
 .home-page{
     background: url(img/main.jpg);
     max-height: 100%;
@@ -109,7 +22,7 @@ header{
 
 .home-page__white{
     background-color: white;
-    height: 220px;
+    padding: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,14 +43,14 @@ header{
 }
 
 .photo{
-    max-height: 400px;
+    height: 33.33%;
     display: flex;
     justify-content: space-between;
 }
 
 .photo__right.photo__right_blue{
     background-color: #81B4D3;
-    width: 400px;
+    width: 33.4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -145,7 +58,7 @@ header{
 
 .photo__left.photo__left_blue{
     background-color: #81B4D3;
-    width: 400px;
+    width: 33.4%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -175,12 +88,12 @@ header{
 }
 
 .advantage__base{
-    height: 330px;
+    height: 330px;            /* не смог убрать высоту */
     display: flex;
 }
 
 .advantage__block{
-    width: 400px;
+    width: 33.33%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -209,13 +122,12 @@ header{
 
 .text-block__base{
     background-color: #EEEEEE;
-    height: 250px;
     display: flex;
     justify-content: space-between;
 }
 
 .text-block__list{
-    width: 400px;
+    width: 33.33%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -245,7 +157,6 @@ header{
 }
 
 .question{
-    height: 290px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -254,7 +165,8 @@ header{
 .question__title{
     font-size: 28px;
     text-align: center;
-    padding-top: 57px;
+    padding-top: 58px;
+    padding-bottom: 26px;
 }
 
 .question__subtitle{
@@ -266,7 +178,7 @@ header{
 }
 
 .form{
-    height: 592px;
+    padding-bottom: 192px;
     max-height: 100%;
     background: url("img/map.png");
     display: flex;
@@ -275,10 +187,10 @@ header{
 }
 
 .form__base{
-    width: 568px;
+    width: 47%;
     margin: 0 auto;
     position: relative;
-    top: -86px;
+    margin-top: -86px;
     box-shadow: 0px 5px 15px 7px rgba(0, 0, 0, 0.1);
 }
 
@@ -292,11 +204,11 @@ header{
 }
 
 .form__white-bg{
-    height: 280px;
     background-color: white;
     display: flex;
     justify-content: space-between;
     padding-top: 55px;
+    padding-bottom: 55px;
     padding-left: 50px;
 }
 
@@ -329,7 +241,6 @@ header{
 }
 
 .form__input{
-    width: 280px;
     background-color: #F2F2F2;
     text-align: left;
     font-size: 16px;
@@ -350,8 +261,7 @@ header{
 .form__text.form__text_down{
     display: flex;
     justify-content: space-between;
-    height: 38px;
-    width: 226px;
+    width: 49.2%;
 }
 
 .form__two-title.form__two-title_left{
@@ -369,11 +279,11 @@ header{
 }
 
 .form__change{
-    width: 114px;
+    width: 114px;  /* ширина */
     background-color: #F2F2F2;
     text-align: left;
     line-height: 38px;
-    padding-left: 13px;
+    padding-left: 23px;
     display: flex;
     justify-content: space-between;
 }
@@ -394,15 +304,14 @@ header{
 }
 
 .form__button-bg{
-    height: 112px;
-    width: 568px;
-    padding-left: 54px;
+    padding-bottom: 56px;
+    padding-left: 50px;
     background-color: white;
 }
 
 .form__button{
     height: 58px;
-    width: 458px;
+    width: 89.4%;
     background-color: #81B4D3;
     color: white;
     text-align: center;
@@ -410,99 +319,3 @@ header{
     font-size: 21px;
     font-weight: 700;
 }
-
-.footer{
-    width: 1200px;
-    padding: 0 123px;
-    background-color: white;
-    height: 120px;
-    max-height: 100%;
-    opacity: 80%;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-top:-120px;
-}
-
-.footer__data{
-    font-size: 21px;
-    line-height: 28px;
-    font-weight: 700;
-    padding-top: 30px;
-}
-
-.footer__icons{
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer__icons.footer__icons_left{
-    height: 48px;
-    width: 46px;
-    background-color: #81B4D3;
-    margin-top: 36px;
-    margin-right: 6px;
-    padding: 17px 14px 16px 15px;          /*Можно ли так оставить, если все 4 значения разные?*/
-}
-
-.footer__icons.footer__icons_center{
-    height: 48px;
-    width: 46px;
-    background-color: #81B4D3;
-    margin-top: 36px;
-    margin-right: 6px;
-    padding: 13px 17px;
-}
-
-.footer__icons.footer__icons_right{
-    height: 48px;
-    width: 46px;
-    background-color: #81B4D3;
-    margin-top: 36px;
-    margin-right: 6px;
-    padding: 16px 13px;
-}
-
-.footer__html-academy{
-    display: flex;
-    width: 197px;
-    justify-content: space-between;
-}
-
-.footer__text{
-    padding-top: 54px;
-}
-
-.footer__logo{
-    padding-top: 39px;
-}
-
-address {
-    font-style: normal
-  }
-  
-.link:hover{
-    color:#756357;
-}
-
-.link_phone{
-    color: black;
-}
-
-.form__button:hover{
-    background-color:#94c1dd;
-}
-
-.footer__icons.footer__icons_left:hover{
-    background-color:#94c1dd;
-}
-
-.footer__icons.footer__icons_center:hover{
-    background-color:#94c1dd;
-}
-
-.footer__icons.footer__icons_right:hover{
-    background-color:#94c1dd;
-}
-

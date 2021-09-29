@@ -1,0 +1,41 @@
+header{
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 1px 6px 15px 3px rgba(34, 60, 80, 0.12);
+    z-index: 1;
+}
+
+.header-nav{
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav__item.header-nav__item_logo{
+    width: 140px;
+    height: 70px;
+}
+
+.header-nav__item.header-nav__item_left{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 72px;
+}
+
+.header-nav__item.header-nav__item_center{
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.header-nav__item.header-nav__item_right{
+    padding-top: 22px;
+    padding-right: 72px;
+    padding-bottom: 22px;
+}
+
+.link{
+    padding: 10px;
+    color:black;
+}

@@ -1,0 +1,61 @@
+.footer{
+    padding: 0 72px;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top:-120px;
+}
+
+.footer__data{
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 700;
+    padding-top: 30px;
+    width: 33.33%;
+}
+
+.footer__icons{
+    display: flex;
+    width: 33.33%;
+}
+
+.footer__icons.footer__icons_left{
+    width: 90%;
+    background-color: #81B4D3;
+    margin-top: 36px;
+    margin-right: 6px;
+    padding: 17px 14px 16px 15px;          /*Можно ли так оставить, если все 4 значения разные?*/
+}
+
+.footer__icons.footer__icons_center{
+    width: 90%;
+    background-color: #81B4D3;
+    margin-top: 36px;
+    margin-right: 6px;
+    padding: 13px 17px;
+}
+
+.footer__icons.footer__icons_right{
+    width: 90%;
+    background-color: #81B4D3;
+    margin-top: 36px;
+    margin-right: 6px;
+    padding: 16px 13px;
+}
+
+.footer__html-academy{
+    display: flex;
+    width: 33.33%;
+}
+
+.footer__text{
+    padding-top: 54px;
+    padding-bottom: 52px;
+    padding-right: 16px;
+}
+
+.footer__logo{
+    padding-top: 39px;
+}
