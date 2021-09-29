@@ -23,7 +23,7 @@
 
 .footer__icons.footer__icons_left{
     width: 90%;
-    background-color: #81B4D3;
+    background-color: $blue-color;
     margin-top: 36px;
     margin-right: 6px;
     padding: 17px 14px 16px 15px;          /*Можно ли так оставить, если все 4 значения разные?*/
@@ -31,7 +31,7 @@
 
 .footer__icons.footer__icons_center{
     width: 90%;
-    background-color: #81B4D3;
+    background-color: $blue-color;
     margin-top: 36px;
     margin-right: 6px;
     padding: 13px 17px;
@@ -39,7 +39,7 @@
 
 .footer__icons.footer__icons_right{
     width: 90%;
-    background-color: #81B4D3;
+    background-color: $blue-color;
     margin-top: 36px;
     margin-right: 6px;
     padding: 16px 13px;

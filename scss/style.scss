@@ -1,4 +1,9 @@
 @import "_nullstyle";
+
+$blue-color: #81B4D3;
+$gray-text-color: #474747;
+$hover-blue-color: #94c1dd;
+
 @import "_header";
 @import "_main";
 @import "_footer";
@@ -16,17 +21,17 @@ address {
 }
 
 .form__button:hover{
-    background-color:#94c1dd;
+    background-color: $hover-blue-color;
 }
 
 .footer__icons.footer__icons_left:hover{
-    background-color:#94c1dd;
+    background-color: $hover-blue-color;
 }
 
 .footer__icons.footer__icons_center:hover{
-    background-color:#94c1dd;
+    background-color: $hover-blue-color;
 }
 
 .footer__icons.footer__icons_right:hover{
-    background-color:#94c1dd;
+    background-color: $hover-blue-color;
 }
